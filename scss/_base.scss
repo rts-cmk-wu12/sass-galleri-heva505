@@ -1,0 +1,43 @@
+
+
+// CSS Reset
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+// Body styling
+body {
+ background: $body-background;
+ color: $text-color;
+ font-family: $font-family-base;
+}
+// Header
+header {
+ padding: $gutter-width;
+ border-bottom: 1px solid #ddd;
+ text-align: center;
+ nav a {
+   margin: 0 $gutter-width / 2;
+   color: $text-color;
+   text-decoration: none;
+   font-size: 1.2em;
+&:hover {
+     color: $accent-color;
+   }
+ }
+}
+// Footer
+footer {
+ padding: $gutter-width;
+ text-align: center;
+ border-top: 1px solid #ddd;
+ a {
+   margin: 0 5px;
+   color: $text-color;
+   text-decoration: none;
+&:hover {
+     color: $accent-color;
+   }
+ }
+}

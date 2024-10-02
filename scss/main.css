@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #333333;
+  font-family: "Arial, sans-serif";
+}
+
+header {
+  padding: 30px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+header nav a {
+  margin: 0 15px;
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+header nav a:hover {
+  color: #ee6e73;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+footer a {
+  margin: 0 5px;
+  color: #333333;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ee6e73;
+}
+
+
+.container {
+  @include flex-container(column, center, center);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $gutter-width;
+ 
+ }
+.container {
+  -moz-column-count: 5;
+       column-count: 5;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+
+.searchbar {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+.searchbar input {
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  outline: none;
+}
+.searchbar input::-moz-placeholder {
+  color: #aaa;
+}
+.searchbar input::placeholder {
+  color: #aaa;
+}
+
+.image-card {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+.image-card img {
+  width: 100%;
+  display: block;
+}
+
+.header-title {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #333333;
+}
+.header-title.highlight {
+  color: #ee6e73;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul li {
+  margin: 0 7.5px;
+}
+.navbar ul li a {
+  font-size: 1.1em;
+  color: #333333;
+}
+.navbar ul li a:hover {
+  color: #ee6e73;
+}/*# sourceMappingURL=main.css.map */
