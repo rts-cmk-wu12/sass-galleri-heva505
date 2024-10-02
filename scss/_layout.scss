@@ -1,0 +1,28 @@
+
+// Container styling
+
+.container {
+ @include flex-container(column, center, center);
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: $gutter-width;
+
+}
+img{
+    max-width: 100%;
+}
+// Grid layout for images
+
+.grid {
+ @include responsive-grid(4);
+ // Adjusting columns count for responsive design
+ @media (max-width: 1024px) {
+   @include responsive-grid(3);
+ }
+ @media (max-width: 768px) {
+   @include responsive-grid(2);
+ }
+ @media (max-width: 480px) {
+   @include responsive-grid(1);
+ }
+}
