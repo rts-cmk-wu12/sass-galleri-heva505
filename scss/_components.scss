@@ -1,0 +1,58 @@
+
+// Searchbar Component
+.searchbar {
+ width: 100%;
+ max-width: 400px;
+ margin: 20px auto;
+ border: 1px solid #ccc;
+ padding: 10px;
+ border-radius: 4px;
+ input {
+   width: 100%;
+   border: none;
+   padding: 5px 10px;
+   font-size: 1.1em;
+   outline: none;
+&::placeholder {
+     color: #aaa;
+   }
+ }
+}
+// Individual Image Card
+.image-card {
+ width: 100%;
+ background: #fff;
+ border: 1px solid #ddd;
+ margin-bottom: $gutter-width;
+ img {
+   width: 100%;
+   display: block;
+ }
+}
+// Header title styling
+.header-title {
+ font-size: 2.5em;
+ margin-bottom: $gutter-width / 2;
+ color: $text-color;
+&.highlight {
+   color: $accent-color;
+ }
+}
+// Navigation bar
+.navbar {
+ margin-bottom: $gutter-width;
+ ul {
+   list-style: none;
+   @include flex-container(row, center, center);
+   li {
+     margin: 0 $gutter-width / 4;
+     a {
+       font-size: 1.1em;
+       color: $text-color;
+&:hover {
+         color: $accent-color;
+       }
+     }
+   }
+ }
+}

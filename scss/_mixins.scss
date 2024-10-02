@@ -1,0 +1,15 @@
+
+
+// Mixin for a flex container
+@mixin flex-container($direction: row, $justify: flex-start, $align: flex-start) {
+ display: flex;
+ flex-direction: $direction;
+ justify-content: $justify;
+ align-items: $align;
+}
+// Mixin for responsive grid
+@mixin responsive-grid($columns) {
+ display: grid;
+ grid-template-columns: repeat($columns, 1fr);
+ gap: $gutter-width;
+}
